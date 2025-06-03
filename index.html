@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lamar - Rəqəmsal əmək bazarı.">
+    <meta name="keywords" content="Lamar, rəqəmsal əmək, rəqəmsal xidmətlər, mütəxəssislər">
+    <meta name="author" content="Lamar.az">
+    <title>Lamar - Rəqəmsal əmək bazarı</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Rəqəmsal əmək bazarı">
+    <meta property="og:site_name" content="lamar.az">
+    <meta property="og:url" content="https://www.lamar.az">
+    <meta property="og:description" content="İş axtaran və işçi axtaranları bir araya gətirən, innovativ və lokasiya əsaslı rəqəmsal platforma.">
+    <meta property="og:type" content=website>
+    <meta property="og:image" content="./logo.svg">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.5;
+            font-size: 16px;
+            letter-spacing: normal;
+        }
+
+        ::-moz-selection {
+            background: #ffffff;
+            color: #752BE0;
+        }
+
+        ::selection {
+            background: #ffffff;
+            color: #752BE0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .header__content {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header__logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .header__logo img {
+            width: auto;
+            height: 50px;
+            user-select: none;
+        }
+
+        .home {
+            background: linear-gradient(75.58deg, #6200EE -27.07%, #9169CB 107.8%);
+        }
+
+        .home__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            padding: 96px 0;
+        }
+
+        .home__content * {
+            position: relative;
+        }
+
+        .home__title {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            max-width: 720px;
+        }
+
+        .home__description {
+            font-size: 1rem;
+            font-weight: 300;
+            color: #ffffff;
+            max-width: 720px;
+        }
+
+        .home__contacts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            gap: 8px;
+            margin-top: 32px;
+        }
+
+        .home__contacts li {
+            display: flex;
+        }
+
+        .home__contacts a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-decoration: none;
+            color: #752BE0;
+            background: #ffffff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            transition: all 250ms ease-in-out;
+            flex-shrink: 0;
+        }
+
+        .home__contacts a:hover {
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 4px 6px 2px rgba(255, 255, 255, 0.25);
+        }
+
+        .home__contacts a svg {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .footer__content {
+            font-size: 0.875rem;
+            font-weight: 300;
+            padding: 20px 0;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        canvas {
+            display: block;
+            vertical-align: bottom;
+        }
+
+        #particles-js {
+            position: fixed;
+            inset: 0;
+        }
+
+        @media (max-width: 768px) {
+            .home__contacts {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .home__contacts li a {
+                flex-grow: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo">
+                    <img src="./logo.svg" alt="lamar.az" width="112" height="50">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="home">
+            <div class="container">
+                <div class="home__content">
+                    <h1 class="home__title">Rəqəmsal əmək bazarı.</h1>
+                    <p class="home__description">İş axtaran və işçi axtaranları bir araya gətirən, innovativ və lokasiya əsaslı rəqəmsal platforma. <br> Biz sizə sürətli, rahat və şəffaf əmək bazarı təcrübəsi təqdim edirik.</p>
+                    <ul class="home__contacts">
+                        <li>
+                            <a href="mailto:office@lamar.az">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5 7L13.53 12.7C13.2213 12.8934 12.8643 12.996 12.5 12.996C12.1357 12.996 11.7787 12.8934 11.47 12.7L2.5 7M4.5 4H20.5C21.6046 4 22.5 4.89543 22.5 6V18C22.5 19.1046 21.6046 20 20.5 20H4.5C3.39543 20 2.5 19.1046 2.5 18V6C2.5 4.89543 3.39543 4 4.5 4Z" stroke="url(#paint0_linear_5299_2784)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_5299_2784" x1="-2.94445" y1="24.2403" x2="27.7915" y2="14.358" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6200EE" />
+                                            <stop offset="1" stop-color="#9169CB" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span>office@lamar.az</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+994 50 264 09 99">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.5004 16.9201V19.9201C22.5016 20.1986 22.4445 20.4743 22.3329 20.7294C22.2214 20.9846 22.0577 21.2137 21.8525 21.402C21.6473 21.5902 21.405 21.7336 21.1412 21.8228C20.8773 21.912 20.5978 21.9452 20.3204 21.9201C17.2433 21.5857 14.2874 20.5342 11.6904 18.8501C9.27425 17.3148 7.22576 15.2663 5.69042 12.8501C4.0004 10.2413 2.94866 7.27109 2.62042 4.1801C2.59543 3.90356 2.6283 3.62486 2.71692 3.36172C2.80555 3.09859 2.94799 2.85679 3.13519 2.65172C3.32238 2.44665 3.55023 2.28281 3.80421 2.17062C4.0582 2.05843 4.33276 2.00036 4.61042 2.0001H7.61042C8.09573 1.99532 8.56621 2.16718 8.93418 2.48363C9.30215 2.80008 9.5425 3.23954 9.61042 3.7201C9.73704 4.68016 9.97187 5.62282 10.3104 6.5301C10.445 6.88802 10.4741 7.27701 10.3943 7.65098C10.3146 8.02494 10.1293 8.36821 9.86042 8.6401L8.59042 9.9101C10.014 12.4136 12.0869 14.4865 14.5904 15.9101L15.8604 14.6401C16.1323 14.3712 16.4756 14.1859 16.8495 14.1062C17.2235 14.0264 17.6125 14.0556 17.9704 14.1901C18.8777 14.5286 19.8204 14.7635 20.7804 14.8901C21.2662 14.9586 21.7098 15.2033 22.027 15.5776C22.3441 15.9519 22.5126 16.4297 22.5004 16.9201Z" stroke="url(#paint0_linear_5299_2774)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_5299_2774" x1="-2.80185" y1="27.2095" x2="28.8378" y2="19.0874" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6200EE" />
+                                            <stop offset="1" stop-color="#9169CB" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span>+994 50 264 09 99</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5 10C20.5 14.993 14.961 20.193 13.101 21.799C12.9277 21.9293 12.7168 21.9998 12.5 21.9998C12.2832 21.9998 12.0723 21.9293 11.899 21.799C10.039 20.193 4.5 14.993 4.5 10C4.5 7.87827 5.34285 5.84344 6.84315 4.34315C8.34344 2.84285 10.3783 2 12.5 2C14.6217 2 16.6566 2.84285 18.1569 4.34315C19.6571 5.84344 20.5 7.87827 20.5 10Z" stroke="url(#paint0_linear_5299_2779)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M12.5 13C14.1569 13 15.5 11.6569 15.5 10C15.5 8.34315 14.1569 7 12.5 7C10.8431 7 9.5 8.34315 9.5 10C9.5 11.6569 10.8431 13 12.5 13Z" stroke="url(#paint1_linear_5299_2779)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_5299_2779" x1="0.144444" y1="27.3" x2="26.173" y2="21.944" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6200EE" />
+                                            <stop offset="1" stop-color="#9169CB" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_5299_2779" x1="0.144444" y1="27.3" x2="26.173" y2="21.944" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6200EE" />
+                                            <stop offset="1" stop-color="#9169CB" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <span>Azərbaycan, Bakı şəhəri</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>© 2025 Lamar.az. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: {
+                    type: "circle",
+                    stroke: { width: 0, color: "#000000" },
+                    polygon: { nb_sides: 5 },
+                    image: { src: "img/github.svg", width: 100, height: 100 }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                    attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: {
+                    onhover: { enable: true, mode: "repulse" },
+                    onclick: { enable: true, mode: "push" },
+                    resize: true
+                },
+                modes: {
+                    grab: { distance: 400, line_linked: { opacity: 1 } },
+                    bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                    repulse: { distance: 200, duration: 0.4 },
+                    push: { particles_nb: 4 },
+                    remove: { particles_nb: 2 }
+                }
+            },
+            retina_detect: true
+        });
+        var count_particles, stats, update;
+        stats = new Stats();
+        stats.setMode(0);
+        stats.domElement.style.position = "absolute";
+        stats.domElement.style.left = "0px";
+        stats.domElement.style.top = "0px";
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector(".js-count-particles");
+        update = function () {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+
+    </script>
+</body>
+</html>
