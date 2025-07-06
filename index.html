@@ -22,9 +22,15 @@
     <meta property="og:image" content="./logo.svg">
 
     <style>
-        * {
+        html,
+        body {
             margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        * {
             box-sizing: border-box;
         }
 
@@ -164,11 +170,31 @@
         }
 
         .footer__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
             font-size: 0.875rem;
             font-weight: 300;
             padding: 20px 0;
             color: #ffffff;
             letter-spacing: 1px;
+        }
+
+        .footer__links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer__links a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 250ms ease-in-out;
+        }
+
+        .footer__links a:hover {
+            border-color: #ffffff;
         }
 
         canvas {
@@ -288,6 +314,10 @@
         <div class="container">
             <div class="footer__content">
                 <p>© 2025 Lamar.az. Bütün hüquqlar qorunur.</p>
+                <div class="footer__links">
+                    <a href="terms-and-conditions.html">İstifadəçi şərtləri</a>
+                    <a href="privacy-policy.html">Məxfilik siyasəti</a>
+                </div>
             </div>
         </div>
     </footer>

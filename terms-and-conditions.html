@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lamar - Rəqəmsal əmək bazarı.">
+    <meta name="keywords" content="Lamar, rəqəmsal əmək, rəqəmsal xidmətlər, mütəxəssislər">
+    <meta name="author" content="Lamar.az">
+    <title>Lamar - Rəqəmsal əmək bazarı</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Rəqəmsal əmək bazarı">
+    <meta property="og:site_name" content="lamar.az">
+    <meta property="og:url" content="https://www.lamar.az">
+    <meta property="og:description" content="İş axtaran və işçi axtaranları bir araya gətirən, innovativ və lokasiya əsaslı rəqəmsal platforma.">
+    <meta property="og:type" content=website>
+    <meta property="og:image" content="./logo.svg">
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.5;
+            font-size: 16px;
+            letter-spacing: normal;
+        }
+
+        ::-moz-selection {
+            background: #ffffff;
+            color: #752BE0;
+        }
+
+        ::selection {
+            background: #ffffff;
+            color: #752BE0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header {
+            background: #752BE0;
+        }
+
+        .header__content {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .header__logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .header__logo img {
+            width: auto;
+            height: 50px;
+            user-select: none;
+        }
+
+        .main {
+            padding: 48px 0;
+        }
+
+        .footer {
+            background: #752BE0;
+        }
+
+        .footer__content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            font-size: 0.875rem;
+            font-weight: 300;
+            padding: 20px 0;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .footer__links {
+            display: flex;
+            gap: 16px;
+        }
+
+        .footer__links a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: all 250ms ease-in-out;
+        }
+
+        .footer__links a:hover {
+            border-color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .header__content {
+                padding: 16px 0;
+            }
+
+            .header__logo img {
+                height: 46px;
+            }
+
+            .footer__content {
+                padding: 16px 0;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="/" class="header__logo">
+                    <img src="./logo.svg" alt="lamar.az" width="112" height="50">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="privacy-policy">
+            <div class="container">
+                <div class="privacy-policy__content">
+                    <h1>İstifadəçi şərtləri</h1>
+                    1. Ümumi müddəalar
+
+                    <br /><br />
+
+                    1.1. İstifadəçi Müqaviləsi (“Müqavilə”) Sizinlə "LAMAR AZ" Məhdud Məsuliyyətli Cəmiyyəti arasında bağlanan, Tətbiqdən, habelə Veb Səhifədən istifadəyə dair münasibətləri tənzimləyən müqavilədir.
+
+                    <br /><br />
+
+                    2. Müqavilədə istifadə olunan anlayışlar
+
+                    <br /><br />
+
+                    2.1. Təchizatçı - "LAMAR AZ" Məhdud Məsuliyyətli Cəmiyyətidir;
+
+                    <br /><br />
+
+                    2.2. İstifadəçi və ya Siz – Tətbiqdə və ya Veb Səhifədə qeydiyyatdan keçən 18 yaşı tamam olmuş fiziki şəxs və ya hüquqi şəxsdir;
+
+                    <br /><br />
+
+                    2.3. Lamar - Məsafədən, yəni olduğunuz yerdən ehtiyacınız olan mal, iş və ya xidmətləri sifariş verə biləcəyiniz, habelə mal, iş və ya xidmətləri təqdim etməyinizə imkanı verən mobil tətbiq və/və ya Veb Səhifədir;
+
+                    <br /><br />
+
+                    2.4. Tətbiq - obyekt və ilkin mətn kodları da daxil olmaqla, bütün mülkiyyət və əqli mülkiyyət hüquqları Təchizatçıya məxsus olan “Lamar” mobil tətbiqidir;
+
+                    <br /><br />
+
+                    2.5. Veb Səhifə - Təchizatçıya məxsus olan www.lamar.az..
+
+                    <br /><br />
+
+                    3. Biz kimik?
+
+                    <br /><br />
+
+                    3.1. Təchizatçı Azərbaycan Respublikasının qanunvericiliyinə əsasən yaradılan, həmin qanunvericiliyə və öz nizamnaməsinə uyğun olaraq qanunvericiliklə icazə verilən fəaliyyətlərlə məşğul olan, əsas məqsədi mənfəət əldə etmək olan hüquqi şəxsdir.
+
+                    <br /><br />
+
+                    3.2. Təchizatçının tam adı və rekvizitləri aşağıdakı kimidir:
+                    Tam adı: "LAMAR AZ" Məhdud Məsuliyyətli Cəmiyyəti;
+                    VÖEN: 2009191541;
+                    Əlaqə vasitəsi: hər hansı suallarınız olarsa (+99450) 2640999 nömrəsi vasitəsilə əlaqə saxlaya bilərsiniz;
+                    Vergi uçotuna alınmış vergi ödəyiciləri barədə digər məlumatları buradan əldə edə bilərsiniz.
+
+                    <br /><br />
+
+                    4. Lamarda qeydiyyat
+
+                    <br /><br />
+
+                    4.1. İstifadəçi mobil cihazları vasitəsilə Tətbiqi yükləməklə, habelə digər elektron vasitələrdən istifadə edərək Veb səhifəyə daxil olmaqla, Lamarda müəyyən edilmiş prosedura əməl etməklə, qeydiyyatdan keçə və şəxsi kabinet yarada bilər.
+
+                    <br /><br />
+
+                    4.2. Təchizatçı Sizə, bu Müqaviləyə uyğun olaraq Tətbiqə və ya Veb Səhifəyə sahib olduğunuz, nəzarət etdiyiniz və ya istifadə etdiyiniz mobil cihazda və ya digər elektron qurğuda Lamardan istifadə etmək üçün qeyri-müstəsna lisenziya verir. Bu lisenziyanın müddəti Sizin Lamarda qeydiyyatdan keçdiyiniz tarixdən başlayır və bu Müqavilə ilə müəyyən edilmiş şərtlər daxilində davam edir.
+
+                    <br /><br />
+
+                    5. Lamardan istifadə, giriş icazələrinin alınması
+
+                    <br /><br />
+
+                    5.1. İstifadəçi Lamarda qeydiyyatdan keçməklə özü üçün müəyyən mal, iş və ya xidmətləri əldə edə, habelə özünə məxsus mal, iş və ya xidmətlərin üçüncü şəxsrlərə satışını, icarəsini, kirayəsini və ya s. formada təqdim edə bilər. Bu məqsədlə Təchizatçı olaraq aşağıdakı giriş icazələrini Sizdən tələb edə bilərik:
+
+                    <br /><br />
+
+                    Kamera, lokasiya və digər funksiyalar üçün giriş icazəsi
+
+                    <br /><br />
+
+                    Təchizatçı olaraq mobil cihazınızın lokasiya, düymə qoruyucusu, sistem xəbərdarlığı pəncərəsi, təqvim, kamera, kontaktlar, mikrofon, bildirişlər, sensorlar, SMS mesajları, sosial media hesabları, kənar yaddaş və digər funksiyalarına giriş icazəsi tələb edə bilərik. Qeyd olunan giriş icazələrindən bəziləri aşağıdakı məqsədlər üçün tələb olunur:
+                    Lokasiya (Location) – İstifadəçinin yerləşdiyi yerin koordinatlarını müəyyən etmək, müvafiq yerə ən yaxın istifadəçiləri, mal, iş və ya xidmətləri tapmaq, onlardan yararlanmaq və ya onları təqdim etmək üçündür;
+                    Düymə qoruyucu (Keyguard) - qeydiyyat məlumatlarının qorunması üçündür;
+                    Sistem xəbərdarlığı pəncərəsi (System alert window) - Skrinşot (screenshoot) funksiyasının aktivləşdirilməsi və ya söndürülməsi üçündür;
+                    Kamera (Camera) – QR kodun, şəxsiyyət vəsiqəsi və sair sənədlərin oxudulması, habelə digər müvafiq əməliyyatlarn icrası üçündür;
+                    Kənar yaddaş (External storage) – məlumat və ya şəkillərin saxlanılması, mobil cihazın qalereyasından şəkillərinin yüklənilməsi, habelə şəxsi kabinet üçün şəkilin seçilməsi üçündür;
+                    Oyaq qal (Wake lock) - Cihazın kilidlənməmiş vəziyyətdə saxlanılması (açıq ekran) üçündür;
+                    Bildirişlər (Push notifications) - Biz Sizə hesabınız və Tətbiq barədə bildirişlər göndərilməsi üçün müraciət edə bilərik. Əgər siz həmin bildirişləri qəbul etməkdən imtina etmək istəyirsinizsə, öz mobil cihazınızın parametrlər bölməsi vasitəsilə bildirişlərin qəbulu funksiyasını deaktiv edə bilərsiniz.
+
+                    <br /><br />
+
+                    Digər saytlara keçidlər/bağlantılar
+
+                    <br /><br />
+
+                    Bu xidmətdə digər saytlara keçidlər (bağlantılar) ola bilər. Siz üçüncü tərəfin keçidini klikləsəniz, həmin Sayta yönəldiləcəksiniz. Qeyd edək ki, bu kənar saytlar Bizim tərəfimizdən idarə olunmur. Buna görə də Sizə müvafiq veb saytların məxfilik siyasətlərini nəzərdən keçirməyinizi şiddətlə tövsiyə edirik. Üçüncü tərəflərin saytlarının və ya xidmətlərinin məzmunu, gizlilik qaydaları və ya tətbiqləri üzərində nəzarətimiz yoxdur və bununla bağlı baş verən hallara görə Təchizatçı olaraq məsuliyyət daşımırıq.
+
+                    <br /><br />
+
+                    Marketinq rabitəsi və digər istifadəçilərlə qarşılıqlı əlavələr
+
+                    <br /><br />
+
+                    Qanunvericiliklə icazə verilən qaydada, sizin razılığınızla sizin məlumatlarınızı (marketinq məqsədləri üçün) üçüncü şəxslərlə bölüşə bilərik. Bu barədə razılığınızı istədiyiniz zaman ləğv edə bilərsiniz. Əgər siz Tətbiqin digər istifadəçiləri ilə qarşılıqlı əlaqədə olsanız, həmin istifadəçilər sizin adınızı, əlaqə nömrənizi, profil şəklinizi, habelə Lamarda yerləşdirdiyiniz digər məlumatlarınızı, digər istifadəçilərlə yazışmağınızı, paylaşımlarını/məlumatlarını bəyənməyinizi, digər fəaliyyətinizin təsvirini görə bilərlər.
+
+                    <br /><br />
+
+                    5.2. Lamardan istifadəni optimallaşdırmaq və rahatlaşdırmaq məqsədilə, Biz Sizə aid barmaq izi, göz qişanız və ya digər fərdi biometrik məlumatlarınızdan istifadə imkanı təklif edə bilərik.
+
+                    <br /><br />
+
+                    5.3. Biz yuxarıda sadlanan giriş icazələrinin məqsədlərini və sayını dəyişdirə, habelə müxtəlif yarışmalar, hədiyyəli uduşlar, müsabiqələr və sorğular keçirmək məqsədilə də bu və ya digər başqa məlumatlara da giriş icazəsi tələb edə bilərik. Siz giriş icazənizi dəyişdirmək istəyirsinizsə, bunu mobil cihazınızın parametrlərində edə bilərsiniz. Parametləri dəyişdikdə, giriş icazəsini dayandırdıqda (ləğv etdikdə), Lamarın təqdim etdiyi xidmətlərdən istifadə imkanından məhrum ola bilərsiniz.
+
+                    <br /><br />
+
+                    6. İstifadəçinin hüquq və vəzifələri
+
+                    <br /><br />
+
+                    6.1. İstifadəçi öz üzərinə aşağıdakı öhdəlikləri götürür:
+
+                    <br /><br />
+
+                    6.1.1. Mobil cihazının və/və ya SİM-kartının itirilməsinin, oğurlanmasının və ya hər hansı formada İstifadəçinin sahibliyindən çıxmasının, habelə üçüncü şəxslər tərəfindən qanunsuz istifadə edilməsinin qarşısının alınması üçün bütün mümkün tədbirləri görür;
+
+                    <br /><br />
+
+                    6.1.2. Mobil cihazın itirilməsi, oğurlanması və ya hər hansı formada sahibliyindən çıxması, üçüncü şəxslər tərəfindən Lamarın qanunsuz istifadə edilməsi zamanı dərhal Təchizatçıya məlumat verir;
+
+                    <br /><br />
+
+                    6.1.3. Lamarın təqdim etdiyi xidmətlərdən Azərbaycan Respublikasının qanunlarına, bu Müqaviləyə, habelə Təchizatçının müəyyən etdiyi və/və ya gələcəkdə müəyyən edəcəyi qaydalara (tələblərə) əsasən istifadə edir;
+
+                    <br /><br />
+
+                    6.1.4. Təchizatçının bu Müqaviləyə və/və ya Lamarın daxili siyasətinə birtərəfli qaydada dəyişikliklər edə bilməsi hüququnu qəbul edir. Dəyişikliklərin Lamarda və ya İstiafadəçinin şəxsi kabinetində yerləşdirildiyi gün İstifadəçi tərəfindən qəbul edildiyi gün sayılır.
+
+                    <br /><br />
+
+                    6.1.5. Özünə məxsus mal, iş və ya xidmətləri qanunvericiliyin tələblərinə əməl etməklə müştərilərə təqdim edir, istehsalının (satışının) lisenziyalaşdırılması, sertifikatlaşdırılması üçün məcburi tələb olan mal, iş və ya xidmətlər yalnız müvafiq təsdiqləyici sənədlər olduqda Lamarda yerləşdirir;
+
+                    <br /><br />
+
+                    6.1.6. Təqdim etdiyi mal, iş və ya xidmətlərdən istifadə nəticəsində üçüncü şəxslərin, o cümlədən Təchizatçının həyatına, sağlamlığına, işgüzar nüfuzuna vurulmuş zərərə/ziyana görə tam məsuliyyət daşıyır;
+
+                    <br /><br />
+
+                    6.1.7. Lamardan istifadə nəticəsində təqdim etdiyi mal, iş və ya xidmətlərə görə əldə etdiyi gəlirdən Azərbaycan Respublikasının qanunvericiliyinə uyğun qaydada vergi ödəyir. Vergiləri ödəmək İstifadəçinin öhdəliyidir.
+
+                    <br /><br />
+
+                    6.2. İstifadəçinin aşağıdakı hüquqları vardır:
+
+                    <br /><br />
+
+                    6.2.1. Lamardan istifadə etməklə mal, iş və ya xidmətləri təqdim edir və ya əldə edir;
+
+                    <br /><br />
+
+                    6.2.2. Mal, iş və ya xidmətləri təqdim etməklə gəlir əldə edir.
+
+                    <br /><br />
+
+                    7. Sənədlərin və əməliyyatların hüquqi qüvvəsi
+
+                    <br /><br />
+
+                    7.1. Lamarda qeydiyyat və ya hər hansı əməliyyatların aparılması zamanı təsdiqlənmiş razılıqlar, sənədlər, verilmiş icazələr İstifadəçinin kağız daşıyıcıda olan şəxsi imzası ilə təsdiqlənmiş müvafiq sənədlərlə eyni hüquqi qüvvəyə malikdir və İstifadəçinin imzasının analoqu hesab edilir və onun şəxsi imzası ilə eyni hüquqi qüvvəyə malikdir.
+
+                    <br /><br />
+
+                    7.2. Əməliyyatların aparılması, habelə əməliyyatlar üçün giriş icazələrinin alınması məqsədilə İstifadəçi tərəfindən müvafiq hərəkətlərin (təsdiqləmələrin) edilməsi, barmaz izi və ya digər fərdi biometrik göstəricilərdən istifadə edilməsi İstifadəçiyə məxsus şəxsi imzanın analoqu kimi qiymətləndirilir və onun şəxsi imzası ilə eyni hüquqi qüvvəyə malikdir.
+
+                    <br /><br />
+
+                    7.3. İstifadəçi qəbul edir ki, Lamarda əməliyyatların aparılması zamanı təsdiqlənmiş razılıqlar, sənədlər, verilmiş icazələr mübahisələrin həlli zamanı sübut hesab olunur.
+
+                    <br /><br />
+
+                    8. Təsdiq və bəyanatlar
+
+                    <br /><br />
+
+                    8.1. İstifadəçi təsdiq və bəyan edir ki, Lamarda qeydiyyat və ya istifadə zamanı daxil etdiyi bütün məlumatlar tam və düzgündür, o yetkinlik yaşına çatmışdır, habelə bütün məlumatlar şəxsən özünə məxsusdur. Lamar vasitəsilə əməliyyatların aparılması zamanı İstifadəçi tərəfindən rekvizitlərin, məbləğlərin və ya digər məlumatın səhv daxil edilməsi, habelə ona məxsus olmayan məlumatın istifadə edilməsi ilə bağlı yarana biləcək risklərə görə məsuliyyət İstifadəçinin üzərinə düşür.
+
+                    <br /><br />
+
+                    8.2. Təchizatçı bəyan edir ki, İstifadəçilərə aid Lamarda mövcud olan məlumatlar İstifadəçilərin özləri tərəfindən yerləşdirilmişdir. Təchizatçı bütün istifadəçilərə münasibətdə eyni yanaşır və onların hər hansı birinin məlumatlarına üstünlük vermir. Təchizatçı yalnız Tətbiq və Veb Səhifənin fəaliyyətini təmin edir. İstifadəçilərinin yerləşdirdiyi məlumatların qeyri-dəqiqliyinə, habelə İstifadəçilərdən hər hansı biri tərəfindən digərinə və ya üçüncü şəxslərə zərər/ziyan dəyərsə buna görə hər hansı məsuliyyət daşımır.
+
+                    <br /><br />
+
+                    8.3. İstifadəçi Lamarda mövcud olan özünə aid eyniləşdirmə məlumatlarının məxfi saxlanılması, təhlükəsizliyinin təmin edilməsi, habelə üçüncü şəxslərə verilməməsi ilə bağlı tədbirlər görməlidir. Təchizatçı məlumat mübadiləsinin təhlükəsizliyinin təmin edilməsi üçün tədiblər görəcəkdir, lakin Təchizatçıdan asılı olmayan səbəblərdən həmin məlumatların üçüncü şəxslər tərəfindən istifadə edilməsi ilə bağlı İstifadəçiyə və ya üçüncü şəxslərə dəymiş zərərə (ziyana) görə Təchizatçı məsuliyyət daşımır.
+
+                    <br /><br />
+
+                    8.4. Mobil cihazın itirilməsi, oğurlanması və ya hər hansı formada İstifadəçinin sahibliyindən çıxması, üçüncü şəxslər tərəfindən Lamardan qanunsuz istifadə edilməsi nəticəsində sonuncuya dəymiş zərərə görə Təchizatçı məsuliyyət daşımır. Bu zaman Təchizatçıya və ya üçüncü şəxslərə dəymiş zərərə görə İstifadəçi məsuliyyət daşıyır.
+
+                    <br /><br />
+
+                    8.5. İstifadəçi digər istifadəçi tərəfindən təqdim edilən ödəniş və ya xidmət haqqı şərtləri ilə diqqətlə tanış olmalı, avans ödəniş etməkdən çəkinməlidir. Bunun nəticəsində yaranan dələduzluq halları ilə bağlı ehtiyatlı olmalıdır.
+
+                    <br /><br />
+
+                    8.6. İstifadəçi qeyri-qanuni, alçaldıcı, nalayiq və ya təhdidedici məqsədlər, dövriyyəsi qadağan edilmiş (məhdudlaşdırılmış) mal, iş və xidmətlərin satışı, istifadəsi, habelə idman mərc və qumar oyunları üzrə ödənişlər etmək üçün Lamardan istifadə edə bilməz. İstifadəçi bu hallarla bağlı əməliyyatlara və onların nəticəsinə görə məsuliyyət daşıyır. Bu kimi əməliyyatların həyata keçirildiyini aşkarladığı halda, Təchizatçı Lamardan istifadəni bloklaşdıra, dayandıra, habelə mal, iş və ya xidmətlərin növünü, həcmini nəzərə almaqla müəyyən limitlər və ya məhdudiyyətlər tətbiq edə bilər.
+
+                    <br /><br />
+
+                    8.7. Siz mövcud və ya ehtiyac olduğu halda, Lamar üzrə hər hansı təhlükəsizlik yeniləməsi və ya proqram əlavəsinin quraşdırılmasına razılıq verirsiniz.
+
+                    <br /><br />
+
+                    8.8. İstifadəçi aşağıdakılardan irəli gələn bütün iddialar, zərərlər və/və ya xərclər üçün məsuliyyət daşıyır:
+                    (i) Tətbiqdən və ya Veb Səhifədən qanunvericiliyə zidd istifadə;
+                    (ii) İstifadəçinin təqdim etdiyi məlumatlara digər istifadəçilərin və ya üçüncü şəxslərin etibar etməsi;
+                    (iii) Bu Müqavilənin müddəalarının, eləcə də üçüncü şəxslərin əqli mülkiyyət və ya digər hüquqlarının pozulması.
+
+                    <br /><br />
+
+                    8.9. Təchizatçının Lamardan istifadəsinin xarakterindən asılı olaraq, habelə İstifadəçinin qeyri-adi və ya cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və yaxud digər əmlakın leqallaşdırılması və ya terrorizmin maliyyələşdirilməsi baxımından şübhəli əməliyyatlarını müəyyən etdikdə, Təchizatçı Lamar üzərindən əməliyyatları bloklaşdıra, habelə əməliyyatların növünü, həcmini nəzərə almaqla müəyyən limitlər və ya məhdudiyyətlər tətbiq edə bilər.
+
+                    <br /><br />
+
+                    9. Zəmanətə dair şərtlər
+
+                    <br /><br />
+
+                    9.1. Təchizatçı və ya istənilən proqram təminatçısı (Tətbiqin yüklənməsini təmin edən mobil telefon provayderi və ya istənilən vasitəçi) proqramla əlaqədar Sizin qarşınızda məsuliyyət və ya öhdəlik daşımır, habelə Tətbiq üçün hər hansı texniki və ya dəstək xidmətlərini təmin etmir.
+
+                    <br /><br />
+
+                    9.2. Lamarda mövcud olan texniki xidmətlər Lamar tərəfindən təmin edilir. İstifadəçilər tərəfindən təqdim edilən mal, iş və ya xidmətlərin Təchizatçıya aidiyyəti yoxdur.
+
+                    <br /><br />
+
+                    9.3. Sizin mobil xidmət provayderiniz tərəfindən Tətbiqdən istifadə məqsədilə ödənişlər (internet, rouminq ödənişləri daxil olmaqla) tətbiq edilə bilər. Bu ödənişlərə görə Təchizatçı məsuliyyət daşımır.
+
+                    <br /><br />
+
+                    9.4. Siz mobil qurğu və ya əməliyyat sisteminin satıcısı tərəfindən dəstəklənən və ya zəmanət verilən konfiqurasiyalardan kənar modifikasiya olunmuş qurğuda və ya əməliyyat sistemində Lamardan istifadə etməməlisiniz. Bura “kodu qırılmış” (jail-broken) və ya “dəyişdirilmiş” (rooted) qurğular da daxildir.
+
+                    <br /><br />
+
+                    9.5. Tətbiqdən və ya Veb Səhifədən istifadənin keyfiyyəti və ya məqsədəuyğunluğu heç bir təsdiq, bəyanat, zəmanət, təminat və ya razılaşma olmadan təmin edilir. Təchizatçı Lamara girişin maneəsiz olacağına, hər hansı yubanma, problem olmayacağına zəmanət vermir.
+
+                    <br /><br />
+
+                    9.6. Təchizatçı heç bir virus və ya digər təhlükəli, məhvedici xüsusiyyətlərin ötürülməyəcəyi və ya Tətbiqdən istifadə edən zaman Sizin mobil qurğunuza heç bir ziyan dəyməyəcəyinə zəmanət vermir. Siz müvafiq mühafizə, habelə məlumatların ehtiyatda saxlanması, avadanlıq və kompüter virusları və ya digər məhvedici xüsusiyyətlərin yoxlanılması üzrə müvafiq tədbirlər görülməsi üçün məsuliyyət daşıyırsınız.
+
+                    <br /><br />
+
+                    10. Əqli mülkiyyət hüquqları
+
+                    <br /><br />
+
+                    10.1. “Lamar” Təchizatçının əmtəə nişanıdır. Bu əmtəə nişanı və bütün digər əlaqəli nişanlar üzrə hüquqlar Təchizatçıya məxsusdur. İstifadəçi Təchizatçının əmtəə nişanlarından, loqo və ya brend adından fərdi, təşkilati və ya hər hansı kommersiya məqsədləri üçün istifadə edə və ya çoxalda bilməz.
+
+                    <br /><br />
+
+                    10.2. Tətbiqdən istifadə, o cümlədən üçüncü şəxslərin əqli mülkiyyət hüquqlarının pozulması ilə əlaqədar İstifadəçi və ya üçüncü tərəfin iddiaları, məhsula görə cavabdehlik iddiaları, eləcə də hüquqi və ya tənzimləyici tələblərə əməl olunması və İstifadəçinin hüquqlarının qorunması barədə iddialar Təchizatçıya yönləndirilməlidir.
+
+                    <br /><br />
+
+                    10.3. Lamara aid olan səhifələr, görüntülər, məlumatlar və materiallar, habelə Tətbiqin və ya onun hər hansı hissəsinin obyekt və ilkin mətn kodları da daxil olmaqla bütünlükdə müəlliflik hüquqları Təchizatçıya məxsusdur və ya ona lisenziya verilmişdir.
+
+                    <br /><br />
+
+                    11. Müqavilənin imzalanması, dəyişikliklər və xitam verilməsi
+
+                    <br /><br />
+
+                    11.1. Bu Müqavilə Lamarın texnoloji vasitələrindən istifadə edilməklə İstifadəçi tərəfindən şəxsi imzanın başqa analoqu (imzanın faksimilesi, SMS, klik edilmə, müvafiq xananın seçilməsi, məlumatların doldurulması və s.) ilə təsdiq edildikdə qüvvəyə minir və müddətsiz olaraq qüvvədə qalır. Müqavilənin imzalanma qaydası ilə bağlı müddəa həm bu Müqavilə bağlanarkən imzalanan, həm də bu Müqavilə üzrə gələcəkdə imzalanacaq digər əlaqəli sənədlərə (əqdlərə) tətbiq olunur. Təchizatçı bu Müqaviləyə istənilən zaman birtərəfli qaydada dəyişiklik edə və ya xitam verə bilər.
+
+                    <br /><br />
+
+                    11.2. Təchizatçı Müqaviləyə dəyişiklik barədə Sizə bildiriş təqdim edə bilər.
+
+                    <br /><br />
+
+                    11.3. Təchizatçı aşağıdakı hallardan biri və ya bir neçəsi olduqda dərhal bu Müqaviləyə xitam verə bilər:
+                    (i) Əgər İstifadəçi bu Müqavilənin müddəalarını kobud surətdə və ya ardıcıl olaraq pozduqda;
+                    (ii) İstifadəçinin qeyri-adi və ya cinayət yolu ilə əldə edilmiş pul vəsaitlərinin və yaxud digər əmlakın leqallaşdırılması və ya terrorizmin maliyyələşdirilməsi baxımından şübhəli əməliyyatlarını müəyyən etdikdə və ya bu barədə Təchizatçıda əsaslı şübhələr olduqda;
+                    (iii) Tətbiqdən və ya Veb Səhifədə qeydiyyatdan keçmiş şəxsin əvəzinə üçüncü şəxslərin istifadə etməsi barədə Təchizatçıda əsaslı şübhələr olduqda;
+                    (iv) Mobil cihazınız və ya əməliyyat sisteminiz Tətbiqi dəstəkləmədikdə, habelə mobil cihazınızın əməliyyat sisteminin istehsalçısı, istənilən tətbiqi proqram təminatçısı və ya digər vasitəçi tərəfindən geri qaytarıldıqda;
+                    (v) Təchizatçı, bu Müqavilənin icrasını davam etdirməsinin qüvvədə olan qanunvericiliyin, məhkəmə qərarının və ya digər vəzifənin pozulması riski daşıdığını və ya Təchizatçıya müvafiq dövlət orqanları (qurumları) tərəfindən tədbir və ya qadağa tətbiq olunacağını güman etdikdə;
+                    (vi) İstifadəçinin Tətbiqi yükləmək hüququ yoxdursa və ya Tətbiqi yükləmək/istifadə etmək hüququ məhdudlaşmışdırsa.
+
+                    <br /><br />
+
+                    11.4. Siz mobil cihazınızda Tətbiqi sildikdə belə, gələcəkdə Tətbiqi yenidən yükləməklə şəxsi kabinetinizə daxil ola bilərsiniz. Qeydiyyatınızı ləğv etdikdə, bu Müqaviləyə də xitam vermiş sayılırsınız.
+
+                    <br /><br />
+
+                    12. Məxfilik Siyasəti
+
+                    <br /><br />
+
+                    12.1. Biz bilirik ki, Siz İstifadəçinin şəxsi və maliyyə məlumatlarının necə idarə olunması ilə maraqlanırsınız. Təchizatçı tərəfindən təmin edilən xidmətlər üzrə şərt və müddəalarda Təchizatçının Sizin və başqaları barədə məlumatları toplaması, emal etməsi və paylaşması barədə müddəalar ola bilər (məsələn, Sizin xidmətlərindən istifadə etdiyiniz və ya xidmətlər təklif etdiyiniz insanlar). İstənilən belə müddəalar həmçinin Sizin Tətbiqdən istifadə zamanı toplanmış və emal edilmiş məlumatlara tətbiq olunacaqdır (bu zaman “Siz” termininə İstifadəçi, habelə İstifadəçi məlumatları əsasında Tətbiqdən istifadə edən üçüncü şəxslər də daxildir). Bu müddəaları məhdudlaşdırmadan Təchizatçı olaraq, Sizin təqdim etdiyiniz bütün məlumatları (şəxsi məlumatlar daxil olmaqla) şifrələnmiş kanallarla ötürürük və məlumat bazalarını müvafiq mühafizə sistemləri ilə qoruyuruq. Buna baxmayaraq, Sizin və ya üçüncü şəxslərin təqsiri ucbatından həmin məlumatların Siz və ya üçüncü şəxslər tərəfindən istifadə edilməsi ilə bağlı İstifadəçiyə və ya üçüncü şəxslərə dəymiş zərərə (ziyana) görə Təchizatçı məsuliyyət daşımır.
+
+                    <br /><br />
+
+                    12.2. Təchizatçı olaraq anlayırıq ki, toplayacağımız müştərilərə dair məlumatlar (bununla məhdudlaşmayaraq ad, soyad, atasının adı, telefon nömrəsi, e-poçt ünvanı, IP ünvanı, cihaz məlumatları, şəxsiyyətini təsdiq edən sənəd(lər), barmaq izi, göz qişası və digər biometrik məlumatları və s.) xüsusi kateqoriyalı fərdi məlumatlardır. Buna görə də, Biz toplanılan, saxlanılan və işlənilən fərdi məlumatların (həmçinin arxivləşdirilmiş fərdi məlumatların) konfidensiallığının qorunması, məlumat sızmalarının qarşısının alınması, yarana biləcək hər hansı fəlakət və məlumat sızmaları üzrə tədbir görürük.
+
+                    <br /><br />
+
+                    12.3. Təchizatçı olaraq müştərilərə ən yaxşı xidmətləri təqdim etmək üçün qanunvericiliyin yol verdiyi hədlərdə Sizə aid məxfi məlumatlardan istifadə edəcəyik. Biz məlumatları digər təşkilatlar, xidmət təminatçıları və ya agentlərinə ötürə bilərik. Bu zaman həmin şəxslərdən müvafiq konfidensiallıq və təhlükəsizlik standartlarını tətbiq etmələrinin tələb olunmasını təmin edəcəyik.
+
+                    <br /><br />
+
+                    12.4. İstifadəçilərə aid fərdi məlumatları aşağıdakı məqsədlərlə toplayırıq:
+                    (i) Tətbiqdə qeydiyyatdan keçməklə təqdim edilən funksionallıqlardan yararlanmaq;
+                    (ii) Təqdim olunan xidmətlərin keyfiyyətini və çeşidlərini genişləndirmək;
+                    (iii) Təqdim olunan xidmətlərin səmərəliliyini və effektivliyini ölçmək, bazar araşdırması aparmaq;
+                    (iv) İstifadəçilərin fəaliyyətlərinin statistikasını öyrənməklə müştəri məmnuniyyətini artırmaq.
+
+                    <br /><br />
+
+                    12.5. Siz bu Müqaviləni imzalamaqla (təsdiq etməklə) razılıq verirsiniz ki, “Fərdi məlumatlar haqqında” Qanuna əsasən “Təchizatçı” ASC, qanunvericiliklə icazə verilən fəaliyyət növləri üzrə əməliyyatların icrası zamanı xidmət keyfiyyətinin və müştəri məmnuniyyətinin artırılması, o cümlədən müştərilərə məhsulların çevik və əlçatan formada təqdim edilməsi məqsədilə tərəfinizdən Təchizatçıya təqdim olunmuş/olunacaq, habelə fərdi məlumatların digər operatorlarından/mülkiyyətçilərindən Sizə məxsus fərdi məlumatların toplanması, işlənməsini və 3-cü şəxslərə (o cümlədən transsərhəd) ötürülməsini həyata keçirə bilər. Bu razılıq Təchizatçının xidmətlərindən istifadə etdiyiniz müddətdə, habelə Lamardan istifadəni dayandırdıqdan sonrakı 3 (üç) il müddətində qüvvədədir və fərdi məlumatlar Təchizatnın müvafiq informasiya sistemində qanunvericilik və Təchizatının daxili qaydaları ilə müəyyən edilmiş müddət ərzində saxlanılır, arxivləşdirilir və məhv edilir. Siz Təchizatçıya müraciət edərək (Tətbiq və ya Veb Səhifə üzərindən müraciət etməklə, habelə Təchizatçının rəsmi ünvanına bildiriş göndərməklə) bu razılığı geri götürə bilərsiniz. Bu halda Təchizatçı Lamardan istifadənizi tam və ya qismən məhdudlaşdıra bilər.
+
+                    <br /><br />
+
+                    12.6. Biz məlumatları qanunvericilikdə icazə verildiyi və ya tələb olunduğu hallarda və həcmdə müvafiq icra hakimiyyəti orqanlarına və ya məhkəmə orqanlarına açıqlayacağıq. Xidmətin göstərilməsi məqsədilə məlumatlarınız Təcziatçının birbaşa və ya dolayısı ilə əməkdaşlıq etdiyi hostinq təminatçıları, analitika xidmətlərinə (Google Analytics və s.), habelə Lamar vasitəsilə ödənişlərin icrasını təmin etmək məqsədilə ödəniş xidməti təchizatçılarına, kredit təşkilatlarına və digər təşkilatlara təqdim edilə bilər.
+
+                    <br /><br />
+
+                    12.7. Siz fərdi məlumatlarınızla Tətbiqdə tanış ola, habelə Tətbiqin imkanları və texniki xüsusiyyətləri əsasında nəzərdə tutulmuş qaydada onlara düzəliş edə və bu məqsədlə Tətbiq üzərindən Təchizatçıya müraciət edə bilərsiniz.
+
+                    <br /><br />
+
+                    13. Kukilər (cookies) və Kuki Siyasəti
+
+                    <br /><br />
+
+                    13.1. Kuki – veb səhifələrə giriş etdiyiniz zaman kompüterinizin, mobil telefonunuzun və ya digər elektron cihazınızın yaddaşına yazılan, mətn və ya rəqəmlər formasında olan kiçik məlumatların saxlanıldığı fayldır. Bu faylda veb səhifələrə daxil olmağınız haqqında məlumat əks olunur. Beləliklə, Siz daha əvvəl giriş etdiyiniz veb səhifədən təkrar istifadə etdikdə, veb səhifə Sizin məlumatlarınızı xatırlayacaqdır. Buna görə də kukilər, veb səhifələri effektiv və daha asan istifadə edə bilməyiniz üçün zəruri və vacibdir.
+
+                    <br /><br />
+
+                    13.2. Kukilər kompüter viruslarının və ya digər zərərli proqramların yayılmasına səbəb olmayan passiv fayllardır. İlk növbədə kukilər elektron cihazlarınızın identifikasiyasına imkan yaradır.
+
+                    <br /><br />
+
+                    13.3. Təchizatçı olaraq Sizə daha səmərəli xidmət, məhsul və ya təkliflər təqdim edə bilməyimiz üçün müxtəlif növ kukilərdən istifadə edirik.
+
+                    <br /><br />
+
+                    13.4. Təchizatçı tərəfindən istifadə olunan kukilərin bəziləri İstifadəçilərə aid fərdi məlumatların toplanmasına imkan verir. Bu məlumatlar hər bir kukinin funksiyasını düzgün yerinə yetirməsi üçün vacibdir. Müvafiq məlumatlar Təchizatçı, habelə onun törəmə təşkilatları və aidiyyəti şəxsləri tərəfindən istifadə oluna bilər.
+
+                    <br /><br />
+
+                    13.5. Fərdi məlumatlarınızla bağlı sorğu təqdim etmək, onlara çıxış əldə etmək və dəyişiklik etmək hüququnuzdan yararlanmanız üçün Təchizatçı ilə əlaqə saxlaya bilərsiniz.
+
+                    <br /><br />
+
+                    13.6. Siz razılıq veririsiniz ki, Veb Səhifədən istifadənizi asanlaşdırmaq üçün Bizim kukilər yaratmağımıza etiraz etmirsiniz. Siz Veb Səhifədə və ya istifadə etdiyiniz brauzerdə müvafiq tənzimləmə aparmaqla kuki fayllarını bloka sala və ya silə, həmçinin onların fəaliyyətini məhdudlaşdıra bilərsiniz. Bunu etmək üçün fərqli brauzerlərdə müəyyən hərəkətlər etməyiniz lazım ola bilər. Brauzerlər üçün təlimatlarla müvafiq brauzerin veb səhifəsi vasitəsilə tanış olmağınızı tövsiyə edirik.
+
+                    <br /><br />
+
+                    13.7. Bildiririk ki, Siz kukilərin yaradılmasından imtina etməklə Veb Səhifəmizdən tam funksional şəkildə istifadə etmək imkanını itirə bilərsiniz. Bu hallara görə Təchizatçı olaraq hər hansı məsuliyyət daşımırıq. Siz bütün və ya bəzi kukiləri bloklasanız, veb səhifənin düzgün işləməməsi və ya bəzi hissələrinə daxil ola bilməyəcəyiniz bir vəziyyət yarana bilər.
+
+                    <br /><br />
+
+                    13.8. Biz kuki siyasətinə, xüsusilə də qanunvericiliyin tələblərinə uyğun olaraq istənilən dəyişikliyi etmək hüququnu özümüzdə saxlayırıq.
+
+                    <br /><br />
+
+                    14. Digər məsələlər
+
+                    <br /><br />
+
+                    14.1. Siz bu Müqavilə, habelə Məxfilik Siyasəti və Kuki Siyasətinin şərtləri ilə razılaşırsınız.
+
+                    <br /><br />
+
+                    14.2. Bu Müqavilənin (o cümlədən onun Əlavələrinin) hər hansı bəndinin qismən və ya bütünlüklə etibarsız, yaxud qanunvericiliyə zidd olması müəyyən edildikdə, sözügedən etibarsız bənd və ya onun etibarsız hissəsi bu Müqavilədən çıxarılmış hesab ediləcək və bu Müqavilənin digər bəndlərinin etibarsızlığına səbəb olmayacaqdır.
+
+                    <br /><br />
+
+                    14.3. Tərəflərin bir-birinə olan bütün növ bildirişləri, xəbərdarlıqları və s. sənədləri Tətbiq, habelə bu Müqavilədə nəzərdə tutulan və ya sonradan təqdim edilən mobil nömrələrinə SMS, ünvanlarına sifarişli məktub, elektron poçt ünvanı, teleqram və ya faks vasitəsilə göndərilir. Həmin ünvana göndərilmiş bildirişlər Tərəflərə çatdırılmış hesab olunacaq və bu zaman tərəflər göndərilən sənədləri almaması halına istinad edə bilməz. Hüquqi və ya poçt ünvan(lar)ında, mobil nömrə və ya digər rekvizitlərində dəyişiklik olan İstifadəçi bu barədə Təchizatçını dərhal xəbərdar etməlidir, əks təqdirdə sonuncu məlum olan ünvan üzrə göndərilmiş müraciətlər ünvan sahibinə çatdırılmış hesab olunacaq. Təchizatçıya dair məlumatlarda dəyişiklik baş verdikdə, İstifadəçilərə SMS, push notification və s. Kanallarla da məlumat verə bilər.
+
+                    <br /><br />
+
+                    14.4. Təchizatçı bu Müqaviləyə əsasən hüquqların hamısını və ya bir hissəsini istənilən digər tərəfə ötürə bilər.
+
+                    <br /><br />
+
+                    15. Tətbiq olunan hüquq
+
+                    <br /><br />
+
+                    15.1. Bu Müqavilə, onun pozulması və ya mülki pozuntu ilə əlaqədar olan və ya ondan irəli gələn bütün iddialar Azərbaycan Respublikasının qanunvericiliyi ilə tənzimlənəcəkdir.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>© 2025 Lamar.az. Bütün hüquqlar qorunur.</p>
+                <div class="footer__links">
+                    <a href="terms-and-conditions.html">İstifadəçi şərtləri</a>
+                    <a href="privacy-policy.html">Məxfilik siyasəti</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
